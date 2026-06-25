@@ -126,7 +126,7 @@ app.post("/generate-plan", async (req, res) => {
 
   try {
     const response = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-6",
       max_tokens: 600,
       system: `You help someone take the first real step toward a meaningful goal.
 Respond ONLY with a valid JSON object — no markdown, no backticks, no explanation. Shape:
